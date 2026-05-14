@@ -22,21 +22,23 @@ const DEMO_USERS = {
 
 window.fbAuth = {
   async login(email, password) {
-    // Primero intenta Supabase real
-    try {
-      const { data, error } = await _sb.auth.signInWithPassword({ email, password });
-      if (!error && data.session) {
-        localStorage.setItem('fx_demo', JSON.stringify({ email, ...DEMO_USERS[email] }));
-        return { user: data.user, access_token: data.session.access_token };
-      }
-    } catch(e) { /* fallback a demo */ }
-    // Fallback demo local
+    // Demo users — sin llamar a Supabase
     const u = DEMO_USERS[email];
     if (u && u.password === password) {
       localStorage.setItem('fx_demo', JSON.stringify({ email, ...u }));
       return { user: { email, id: 'demo' }, access_token: 'demo_token' };
     }
-    return { error: 'Email o contraseña incorrectos.' };
+    // Usuarios reales vía Supabase
+    try {
+      const { data, error } = await _sb.auth.signInWithPassword({ email, password });
+      if (!error && data.session) {
+        localStorage.setItem('fx_demo', JSON.stringify({ email, nombre: email }));
+        return { user: data.user, access_token: data.session.access_token };
+      }
+      return { error: error?.message || 'Credenciales incorrectas.' };
+    } catch(e) {
+      return { error: 'No se pudo conectar. Verifica tu conexión.' };
+    }
   },
   async register(email, password, meta = {}) {
     try {
@@ -100,6 +102,7 @@ const rendered = new Set();
 
 function goScreen(id) {
   if (!SCREENS[id]) return;
+  if (id !== 'login') setSidebarVisibility(true);
   if (!rendered.has(id)) {
     document.getElementById('screen-' + id).innerHTML = SCREENS[id].html;
     rendered.add(id);
