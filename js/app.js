@@ -11,7 +11,7 @@ import * as vitrina    from './screens/vitrina.js';
 
 // ── SUPABASE SDK ─────────────────────────────────────────────────────────────
 const SB_URL = 'https://zvleepucmfpkedyxyeol.supabase.co';
-const SB_KEY = 'sb_publishable_Tl_gqh-uYy-VBhwM7aIHRw_aKz-Cczj';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp2bGVlcHVjbWZwa2VkeXh5ZW9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3NTk1OTgsImV4cCI6MjA5NDMzNTU5OH0.1rfSk1_qGlj6Bn9Ty86eFvDzt8O90nYM40r1lhEwiAg';
 const _sb    = window.supabase.createClient(SB_URL, SB_KEY);
 
 window.fbAuth = {
