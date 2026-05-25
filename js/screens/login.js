@@ -95,12 +95,6 @@ export const html = `
         <div class="lp-srv-desc">Conectamos tu producción directamente con exportadores, supermercados e importadores internacionales. Tu vitrina verificada con foto y certificaciones.</div>
         <div class="lp-srv-qui"><strong>Quiénes somos:</strong> Plataforma de conexión comercial entre productores verificados y compradores del mundo. <strong>Misión:</strong> Eliminar la fragmentación del pequeño productor frente a grandes compradores.</div>
       </div>
-      <div class="lp-srv-card">
-        <div class="lp-srv-ico">🛡️</div>
-        <div class="lp-srv-name">Seguro Paramétrico</div>
-        <div class="lp-srv-desc">Cobertura climática automática ante El Niño, lluvias y sequías. Pago activado solo, en menos de 72 horas, sin trámites ni inspecciones.</div>
-        <div class="lp-srv-qui"><strong>Quiénes somos:</strong> Brazo de gestión de riesgo climático con datos satelitales del SENAMHI. <strong>Misión:</strong> Proteger la inversión del agricultor ante eventos climáticos extremos.</div>
-      </div>
     </div>
   </section>
 
