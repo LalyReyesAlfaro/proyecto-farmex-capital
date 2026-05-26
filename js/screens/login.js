@@ -248,6 +248,10 @@ export const html = `
         <div class="fg"><label class="fl">Correo electrónico</label><input class="fi" type="email" id="r-email" placeholder="correo@ejemplo.com"></div>
         <div class="fg"><label class="fl">Contraseña</label><input class="fi" type="password" id="r-pass" placeholder="Mínimo 6 caracteres"></div>
         <div class="login-error" id="r-error" style="display:none;"></div>
+        <label class="lp-privacy-check">
+          <input type="checkbox" id="r-privacy">
+          <span>He leído y acepto la <a href="docs/politica-privacidad.pdf" target="_blank" rel="noopener">Política de Privacidad</a> y autorizo el tratamiento de mis datos personales.</span>
+        </label>
         <button class="lp-auth-btn" id="r-btn" onclick="doRegister()">Crear mi cuenta →</button>
       </div>
     </div>
@@ -315,8 +319,10 @@ export function init() {
     const pass    = document.getElementById('r-pass').value;
     const btn     = document.getElementById('r-btn');
     const err     = document.getElementById('r-error');
+    const privacy = document.getElementById('r-privacy').checked;
     if (!nombre || !region || !ha || !cultivo || !email || !pass) { showErr(err, 'Completa todos los campos.'); return; }
     if (pass.length < 6) { showErr(err, 'Contraseña mínimo 6 caracteres.'); return; }
+    if (!privacy) { showErr(err, 'Debes aceptar la Política de Privacidad para continuar.'); return; }
     btn.textContent = 'Creando cuenta...'; btn.disabled = true;
     const data = await window.fbAuth.register(email, pass, { nombre, region });
     if (data.access_token || data.user) {
