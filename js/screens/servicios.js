@@ -239,32 +239,6 @@ export const html = `
   </div>
 </div>
 
-<!-- Servicio 6: Seguro Paramétrico -->
-<div class="srv-block" style="margin-bottom:0;">
-  <div class="srv-block-header">
-    <div class="srv-block-ico" style="background:#E8F8EE;">🛡️</div>
-    <div>
-      <div class="srv-block-name">Seguro Paramétrico Agrícola</div>
-      <div class="srv-block-tag">Cobertura automática ante riesgo climático</div>
-    </div>
-  </div>
-  <div class="srv-block-body">
-    <div class="srv-block-who">
-      <div class="srv-lbl">👥 Quiénes somos</div>
-      <p>Somos el brazo de gestión de riesgo climático de Farmex, en alianza con aseguradoras especializadas y datos satelitales del SENAMHI. Activamos coberturas de forma automática sin que el productor tenga que hacer ningún trámite.</p>
-    </div>
-    <div class="srv-block-mission">
-      <div class="srv-lbl">🎯 Nuestra misión</div>
-      <p>Proteger la inversión del agricultor ante eventos climáticos extremos (El Niño, lluvias, sequías) con pago automático en menos de 72 horas cuando se supera el umbral de riesgo establecido.</p>
-    </div>
-    <div class="srv-features-grid">
-      <div class="srv-feat"><div class="sf-ico-s">🌧️</div><div><div class="sf-n-s">Cobertura por lluvias</div><div class="sf-d-s">Activa al superar 45mm/24h</div></div></div>
-      <div class="srv-feat"><div class="sf-ico-s">☀️</div><div><div class="sf-n-s">Cobertura por sequía</div><div class="sf-d-s">Activa por déficit hídrico satelital</div></div></div>
-      <div class="srv-feat"><div class="sf-ico-s">⚡</div><div><div class="sf-n-s">Pago en 72 horas</div><div class="sf-d-s">Sin trámites ni inspecciones</div></div></div>
-      <div class="srv-feat"><div class="sf-ico-s">📡</div><div><div class="sf-n-s">Activación automática</div><div class="sf-d-s">Monitoreo 24/7 con satélites</div></div></div>
-    </div>
-  </div>
-</div>
 `;
 
 export function init() {}
