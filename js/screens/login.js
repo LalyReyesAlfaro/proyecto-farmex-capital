@@ -15,6 +15,10 @@ export const html = `
       <li><a href="#lp-servicios">Nuestros Servicios</a></li>
       <li><a href="#lp-mercado">Mercado</a></li>
       <li><a href="#lp-contacto">Contáctanos</a></li>
+      <li class="lp-nb-auth-mobile">
+        <button class="lp-btn-ghost" onclick="showAuth('login')">Ingresar</button>
+        <button class="lp-btn-solid" onclick="showAuth('register')">Registrarme</button>
+      </li>
     </ul>
     <div class="lp-nb-btns">
       <button class="lp-btn-ghost" onclick="showAuth('login')">Ingresar</button>
