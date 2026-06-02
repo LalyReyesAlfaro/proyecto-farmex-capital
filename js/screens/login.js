@@ -12,6 +12,7 @@ export const html = `
     </div>
     <ul class="lp-nb-links">
       <li><a href="#lp-inicio">Inicio</a></li>
+      <li><a href="#lp-quienes">Quiénes somos</a></li>
       <li><a href="#lp-servicios">Nuestros Servicios</a></li>
       <li><a href="#lp-mercado">Mercado</a></li>
       <li><a href="#lp-contacto">Contáctanos</a></li>
@@ -60,6 +61,35 @@ export const html = `
     <div class="lp-stat"><div class="lp-stat-v">6</div><div class="lp-stat-l">Productos por ciclo</div></div>
     <div class="lp-stat"><div class="lp-stat-v">20–30%</div><div class="lp-stat-l">Pérdidas evitables</div></div>
   </div>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="lp-quienes" class="lp-section lp-section-light">
+    <div class="lp-section-header tc">
+      <div class="lp-stag">Sobre Farmex Capital</div>
+      <h2 class="lp-sh2">Quiénes somos</h2>
+      <p class="lp-sp">Farmex Capital es la primera plataforma AgriFintech especializada en pequeños y medianos agroexportadores de palta y arándano en la costa del Perú. Combinamos financiamiento inteligente, data agrícola en tiempo real, scoring alternativo con IA, asistencia técnica y conexión directa con compradores internacionales.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:8px;">
+      <div style="background:#fff;border-radius:12px;padding:20px 22px;border:1px solid #e5e9ef;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+        <div style="font-size:26px;margin-bottom:8px;">🎯</div>
+        <div style="font-size:14px;font-weight:700;color:#1a2e1a;margin-bottom:6px;">Nuestra misión</div>
+        <p style="font-size:13px;color:#555;line-height:1.7;margin:0;">"Convertir ciclos agrícolas en flujo de caja predecible, siendo el habilitador financiero del pequeño y mediano agroexportador peruano que el sistema financiero tradicional ha ignorado por décadas."</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:20px 22px;border:1px solid #e5e9ef;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+        <div style="font-size:26px;margin-bottom:8px;">👥</div>
+        <div style="font-size:14px;font-weight:700;color:#1a2e1a;margin-bottom:6px;">Nuestro equipo</div>
+        <p style="font-size:13px;color:#555;line-height:1.7;margin:0;">Analistas financieros con experiencia en COFIDE y Agrobanco, ingenieros agrónomos con +10 años en campo, e ingenieros de datos especializados en IA agrícola. Entendemos los ciclos productivos porque hemos estado en el campo.</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:20px 22px;border:1px solid #e5e9ef;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+        <div style="font-size:26px;margin-bottom:8px;">🌿</div>
+        <div style="font-size:14px;font-weight:700;color:#1a2e1a;margin-bottom:6px;">El problema que resolvemos</div>
+        <p style="font-size:13px;color:#555;line-height:1.7;margin:0;">El productor piensa por ciclos, no por trimestres. La banca tradicional ignora ese ritmo. Farmex diseña cada producto financiero en torno al calendario agrícola real del cultivo.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:20px;padding:14px 20px;background:#E8F8EE;border-radius:10px;font-size:13px;color:#1a5c2e;">
+      Alineados con: <a href="https://www.gob.pe/midagri" target="_blank" rel="noopener" style="color:#1e8449;font-weight:600;text-decoration:none;">MIDAGRI</a> &nbsp;·&nbsp; <a href="https://www.senasa.gob.pe" target="_blank" rel="noopener" style="color:#1e8449;font-weight:600;text-decoration:none;">SENASA</a> &nbsp;·&nbsp; <a href="https://www.prohass.com.pe" target="_blank" rel="noopener" style="color:#1e8449;font-weight:600;text-decoration:none;">PROHASS</a> &nbsp;·&nbsp; <a href="https://www.peruberries.pe" target="_blank" rel="noopener" style="color:#1e8449;font-weight:600;text-decoration:none;">Perú Berries</a> &nbsp;·&nbsp; <a href="https://www.promperu.gob.pe" target="_blank" rel="noopener" style="color:#1e8449;font-weight:600;text-decoration:none;">PromPerú</a>
+    </div>
+  </section>
 
   <!-- SERVICIOS -->
   <section id="lp-servicios" class="lp-section lp-section-light">

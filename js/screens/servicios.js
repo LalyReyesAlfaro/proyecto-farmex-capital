@@ -36,14 +36,10 @@ export const html = `
       <div class="srv-lbl">🎯 Nuestra misión</div>
       <p>Proveer crédito accesible, flexible y alineado con los ciclos productivos del agricultor — no con los calendarios de la banca tradicional.</p>
     </div>
-    <div class="srv-features-grid">
-      <div class="srv-feat"><div class="sf-ico-s">🌱</div><div><div class="sf-n-s">Crédito Fertilización</div><div class="sf-d-s">Hasta S/ 4,500/ha · 8 meses</div></div></div>
-      <div class="srv-feat"><div class="sf-ico-s">📅</div><div><div class="sf-n-s">Crédito Campaña</div><div class="sf-d-s">Hasta S/ 12,000/ha · 12 meses</div></div></div>
-      <div class="srv-feat"><div class="sf-ico-s">💧</div><div><div class="sf-n-s">Crédito Riego</div><div class="sf-d-s">Hasta S/ 8,000/ha · 18 meses</div></div></div>
-      <div class="srv-feat"><div class="sf-ico-s">📦</div><div><div class="sf-n-s">Crédito Postcosecha</div><div class="sf-d-s">Hasta S/ 6,500/ha · 6 meses</div></div></div>
-      <div class="srv-feat"><div class="sf-ico-s">🚢</div><div><div class="sf-n-s">Adelanto Exportación</div><div class="sf-d-s">Hasta 80% del contrato</div></div></div>
-      <div class="srv-feat"><div class="sf-ico-s">🔧</div><div><div class="sf-n-s">Crédito Tecnificación</div><div class="sf-d-s">Hasta S/ 25,000/ha · 36 meses</div></div></div>
+    <div style="margin-top:12px;padding:12px 16px;background:#FDF3DC;border-radius:8px;font-size:13px;color:#7d5a0f;line-height:1.6;">
+      8 productos disponibles por etapa productiva — fertilización, riego, campaña, postcosecha, tecnificación, control fitosanitario, bioestimulación y adelanto de exportación. Tasas desde 1.4% mensual con plazos alineados a tu ciclo de cosecha. Financiamiento respaldado en normativa de <a href="https://www.gob.pe/midagri" target="_blank" rel="noopener" style="color:#a0720f;font-weight:600;">MIDAGRI</a> y <a href="https://www.senasa.gob.pe" target="_blank" rel="noopener" style="color:#a0720f;font-weight:600;">SENASA</a>.
     </div>
+    <button onclick="window.goScreen('creditos')" style="margin-top:12px;background:none;border:1.5px solid #c49a1a;color:#c49a1a;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">Ver todos los créditos y simular →</button>
   </div>
 </div>
 
@@ -185,57 +181,10 @@ export const html = `
       <div class="srv-lbl">🎯 Nuestra misión</div>
       <p>Eliminar la fragmentación del pequeño productor frente a grandes compradores, dándole visibilidad, trazabilidad y acceso directo al mercado internacional.</p>
     </div>
-    <div style="font-size:13px;font-weight:700;color:var(--txt);margin:16px 0 12px;">Cultivos disponibles en el marketplace</div>
-    <div class="srv-crop-grid">
-      <div class="srv-crop-card">
-        <img class="srv-crop-img" src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=400&q=80" alt="Palta Hass">
-        <div class="srv-crop-body">
-          <div class="srv-crop-badge">🥑 Palta Hass</div>
-          <div class="srv-crop-name">Finca García · La Libertad</div>
-          <div class="srv-crop-info">
-            <div>📍 <strong>Ubicación:</strong> Virú, La Libertad</div>
-            <div>🌡️ <strong>Clima:</strong> Valle costero · 18–24°C</div>
-            <div>📐 <strong>Área:</strong> 32 ha propias</div>
-            <div>📦 <strong>Disponible:</strong> ~112 TM · Ago–Oct 2026</div>
-            <div>✓ <strong>Certs:</strong> Global G.A.P · SENASA</div>
-          </div>
-          <div class="srv-crop-score">Score Farmex: <strong>760</strong> · Muy Bueno</div>
-          <button class="srv-crop-btn">Ver vitrina del productor →</button>
-        </div>
-      </div>
-      <div class="srv-crop-card">
-        <img class="srv-crop-img" src="https://images.unsplash.com/photo-1425007680966-1ac71ad1b87d?w=400&q=80" alt="Arándano">
-        <div class="srv-crop-body">
-          <div class="srv-crop-badge" style="background:#E8F4FD;color:var(--info);">🫐 Arándano</div>
-          <div class="srv-crop-name">Finca Del Valle · Ica</div>
-          <div class="srv-crop-info">
-            <div>📍 <strong>Ubicación:</strong> Chincha, Ica</div>
-            <div>🌡️ <strong>Clima:</strong> Costa árida · 20–28°C</div>
-            <div>📐 <strong>Área:</strong> 18 ha bajo malla</div>
-            <div>📦 <strong>Disponible:</strong> ~45 TM · Sep–Nov 2026</div>
-            <div>✓ <strong>Certs:</strong> Global G.A.P · Rainforest</div>
-          </div>
-          <div class="srv-crop-score">Score Farmex: <strong>810</strong> · Excelente</div>
-          <button class="srv-crop-btn">Ver vitrina del productor →</button>
-        </div>
-      </div>
-      <div class="srv-crop-card">
-        <img class="srv-crop-img" src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=400&q=80" alt="Palta Piura">
-        <div class="srv-crop-body">
-          <div class="srv-crop-badge">🥑 Palta Fuerte</div>
-          <div class="srv-crop-name">Finca Morales · Piura</div>
-          <div class="srv-crop-info">
-            <div>📍 <strong>Ubicación:</strong> Tambogrande, Piura</div>
-            <div>🌡️ <strong>Clima:</strong> Costa norte · 24–32°C</div>
-            <div>📐 <strong>Área:</strong> 25 ha · riego tecnificado</div>
-            <div>📦 <strong>Disponible:</strong> ~75 TM · Jul–Sep 2026</div>
-            <div>✓ <strong>Certs:</strong> SENASA · Orgánico</div>
-          </div>
-          <div class="srv-crop-score">Score Farmex: <strong>740</strong> · Bueno</div>
-          <button class="srv-crop-btn">Ver vitrina del productor →</button>
-        </div>
-      </div>
+    <div style="margin-top:12px;padding:12px 16px;background:#FDEEEE;border-radius:8px;font-size:13px;color:#7d1f1f;line-height:1.6;">
+      Productores verificados con perfil completo: foto del cultivo, ubicación GPS, certificaciones Global G.A.P. y SENASA, historial productivo por campaña e Score Farmex AI. Compradores internacionales los encuentran y contactan directamente, sin intermediarios.
     </div>
+    <button onclick="window.goScreen('vitrina')" style="margin-top:12px;background:none;border:1.5px solid #c0392b;color:#c0392b;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">Ver mi vitrina de productor →</button>
   </div>
 </div>
 

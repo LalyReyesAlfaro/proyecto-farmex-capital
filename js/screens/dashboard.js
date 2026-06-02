@@ -79,6 +79,12 @@ export const html = `
     <div class="ci-box"><div class="ci-val">112 días</div><div class="ci-lbl">Para cosecha</div></div>
     <div class="ci-box"><div class="ci-val">~128 TM</div><div class="ci-lbl">Proyección</div></div>
   </div>
+  <div style="margin-top:12px;padding:10px 14px;background:#f0faf3;border-left:3px solid #27ae60;border-radius:0 8px 8px 0;font-size:12px;color:#555;">
+    <div style="font-weight:700;color:#1e8449;margin-bottom:6px;">📚 Referencias técnicas</div>
+    <div style="margin-bottom:4px;">📄 <a href="docs/fitosanitarios-palta.pdf" target="_blank" rel="noopener" style="color:#1e8449;text-decoration:none;font-weight:600;">Rojas Guerrero (2018) – Bioestimulantes foliares en palta Hass, UNP · +84% rendimiento</a></div>
+    <div style="margin-bottom:4px;">🌿 <a href="https://www.prohass.com.pe" target="_blank" rel="noopener" style="color:#1e8449;text-decoration:none;font-weight:600;">PROHASS – Asociación de Productores de Palta Hass del Perú</a></div>
+    <div>🏛️ <a href="https://www.gob.pe/midagri" target="_blank" rel="noopener" style="color:#1e8449;text-decoration:none;font-weight:600;">MIDAGRI – Guía técnica y estadísticas de producción de palta</a></div>
+  </div>
 </div>
 
 <!-- Ciclo Arándano -->
@@ -108,6 +114,12 @@ export const html = `
   </div>
   <div style="margin-top:12px;background:#E8F4FD;border-left:3px solid #2980B9;padding:10px 14px;border-radius:0 6px 6px 0;font-size:12px;color:#1a2e4a;">
     ⚠️ <strong>Etapa crítica:</strong> Arándano en floración es altamente sensible a heladas (daño desde -4.5°C) y vientos fuertes. Revisar alertas de clima activas.
+  </div>
+  <div style="margin-top:10px;padding:10px 14px;background:#EAF3FB;border-left:3px solid #2980B9;border-radius:0 8px 8px 0;font-size:12px;color:#1a2e4a;">
+    <div style="font-weight:700;color:#2980B9;margin-bottom:6px;">📚 Referencias técnicas</div>
+    <div style="margin-bottom:4px;">🫐 <a href="https://www.peruberries.pe" target="_blank" rel="noopener" style="color:#2980B9;text-decoration:none;font-weight:600;">Perú Berries – Asociación de Productores y Exportadores de Arándanos del Perú</a></div>
+    <div style="margin-bottom:4px;">🏛️ <a href="https://www.gob.pe/midagri" target="_blank" rel="noopener" style="color:#2980B9;text-decoration:none;font-weight:600;">MIDAGRI – Estadísticas y guías de producción de arándano</a></div>
+    <div>📋 <a href="https://www.senasa.gob.pe" target="_blank" rel="noopener" style="color:#2980B9;text-decoration:none;font-weight:600;">SENASA – Protocolos fitosanitarios para exportación de arándano fresco</a></div>
   </div>
 </div>
 
