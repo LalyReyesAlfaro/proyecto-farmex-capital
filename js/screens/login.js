@@ -124,6 +124,12 @@ export const html = `
         <div class="lp-srv-name">Marketplace & Exportación</div>
         <div class="lp-srv-desc">Conectamos tu producción directamente con exportadores, supermercados e importadores internacionales. Tu vitrina verificada con foto, certificaciones e historial.</div>
       </div>
+      <div class="lp-srv-card" style="background:var(--g-dark);border-color:var(--g-dark);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:12px;">
+        <div style="font-size:36px;">🌱</div>
+        <div style="font-size:16px;font-weight:800;color:#fff;">¿Listo para crecer?</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.65);line-height:1.6;">Seleccionamos productores de palta y arándano con 10+ hectáreas en la costa del Perú. Registro gratuito.</div>
+        <button onclick="showAuth('register')" style="margin-top:4px;background:var(--gold);color:#fff;border:none;padding:10px 22px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;width:100%;">Registrarme gratis →</button>
+      </div>
     </div>
   </section>
 
