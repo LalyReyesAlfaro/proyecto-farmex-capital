@@ -1,6 +1,6 @@
 const RATES = {
-  palta:    { fertilizacion:[4500,1.8], 'campaña':[12000,1.6], riego:[8000,1.5], postcosecha:[6500,1.9], exportacion:[80000,2.1], tecnificacion:[25000,1.4] },
-  arandano: { fertilizacion:[5500,1.8], 'campaña':[15000,1.6], riego:[10000,1.5], postcosecha:[8000,1.9], exportacion:[85000,2.0], tecnificacion:[45000,1.4] }
+  palta:    { fertilizacion:[4500,1.8], 'campaña':[12000,1.6], riego:[8000,1.5], postcosecha:[6500,1.9], exportacion:[80000,2.1], tecnificacion:[25000,1.4], fitosanitario:[3500,1.7], bioestimulacion:[2800,1.8] },
+  arandano: { fertilizacion:[5500,1.8], 'campaña':[15000,1.6], riego:[10000,1.5], postcosecha:[8000,1.9], exportacion:[85000,2.0], tecnificacion:[45000,1.4], fitosanitario:[4200,1.7], bioestimulacion:[3500,1.8] }
 };
 
 export const html = `
@@ -12,12 +12,14 @@ export const html = `
   <div class="prod"><div class="prod-stg">Etapa 4 · Ago–Oct</div><div class="prod-n">Crédito Postcosecha</div><div class="prod-d">Empaque, cámaras de frío, certificaciones fitosanitarias y transporte hasta el puerto de embarque.</div><div class="prod-m">Hasta S/ 6,500 / ha</div><div class="prod-p">6 meses · desde 1.9% mensual</div></div>
   <div class="prod"><div class="prod-stg">Etapa 5 · Exportación</div><div class="prod-n">Adelanto Exportación</div><div class="prod-d">Anticipo sobre contrato de venta. Liquidez inmediata sin esperar los 60–90 días del comprador.</div><div class="prod-m">Hasta 80% del contrato</div><div class="prod-p">Hasta cobro · desde 2.1% mensual</div></div>
   <div class="prod"><div class="prod-stg">Inversión · Largo plazo</div><div class="prod-n">Crédito Tecnificación</div><div class="prod-d">Nuevas hectáreas, renovar variedades, maquinaria de cosecha o tecnología de monitoreo satelital.</div><div class="prod-m">Hasta S/ 25,000 / ha</div><div class="prod-p">36 meses · desde 1.4% mensual</div></div>
+  <div class="prod"><div class="prod-stg">Sanidad · Todo el ciclo</div><div class="prod-n">Crédito Control Fitosanitario</div><div class="prod-d">Agroquímicos certificados SENASA: Spinosad, Bacillus thuringiensis, Metalaxil, Oxicloruro de Cobre, Cyprodinil + Fludioxonil y Azufre para control de Stenoma catenifer, mosca de la fruta, trips y antracnosis.</div><div class="prod-m">Hasta S/ 3,500 / ha</div><div class="prod-p">8 meses · desde 1.7% mensual</div></div>
+  <div class="prod"><div class="prod-stg">Productividad · Cuaje a Envero</div><div class="prod-n">Crédito Control de Bioestimulación</div><div class="prod-d">Bioestimulantes de última generación: Biozyme TF, Agrispon, Biostim, Fertimar y H-Top. 3 aplicaciones durante el crecimiento del fruto. Incremento comprobado de rendimiento de hasta +84% t/ha.</div><div class="prod-m">Hasta S/ 2,800 / ha</div><div class="prod-p">6 meses · desde 1.8% mensual</div></div>
 </div>
 <div class="stitle">🧮 Simulador de Crédito</div>
 <div class="sim">
   <div class="sim-grid">
     <div class="fg"><label class="fl">Cultivo</label><select class="fi" id="s-cult"><option value="palta">Palta Hass</option><option value="arandano">Arándano</option></select></div>
-    <div class="fg"><label class="fl">Tipo de crédito</label><select class="fi" id="s-tipo"><option value="fertilizacion">Crédito Fertilización</option><option value="campaña" selected>Crédito Campaña</option><option value="riego">Crédito Riego</option><option value="postcosecha">Crédito Postcosecha</option><option value="exportacion">Adelanto Exportación</option><option value="tecnificacion">Crédito Tecnificación</option></select></div>
+    <div class="fg"><label class="fl">Tipo de crédito</label><select class="fi" id="s-tipo"><option value="fertilizacion">Crédito Fertilización</option><option value="campaña" selected>Crédito Campaña</option><option value="riego">Crédito Riego</option><option value="postcosecha">Crédito Postcosecha</option><option value="exportacion">Adelanto Exportación</option><option value="tecnificacion">Crédito Tecnificación</option><option value="fitosanitario">Crédito Control Fitosanitario</option><option value="bioestimulacion">Crédito Control de Bioestimulación</option></select></div>
     <div class="fg"><label class="fl">Hectáreas</label><input class="fi" type="number" id="s-ha" value="32" min="1" max="200"></div>
     <div class="fg"><label class="fl">Plazo (meses)</label><select class="fi" id="s-plazo"><option value="6">6 meses</option><option value="8">8 meses</option><option value="12" selected>12 meses</option><option value="18">18 meses</option><option value="24">24 meses</option><option value="36">36 meses</option></select></div>
   </div>
