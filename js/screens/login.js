@@ -164,7 +164,7 @@ export const html = `
       </div>
       <div class="lp-mp-card">
         <div class="lp-mp-img-wrap">
-          <img src="https://images.unsplash.com/photo-1425007680966-1ac71ad1b87d?w=500&q=80" alt="Arándano" class="lp-mp-img">
+          <img src="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=500&q=80" alt="Arándano" class="lp-mp-img">
           <div class="lp-mp-badge">🫐 Arándano</div>
         </div>
         <div class="lp-mp-body">
@@ -178,7 +178,7 @@ export const html = `
       </div>
       <div class="lp-mp-card">
         <div class="lp-mp-img-wrap">
-          <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=500&q=80" alt="Palta Piura" class="lp-mp-img">
+          <img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?w=500&q=80" alt="Palta Piura" class="lp-mp-img">
           <div class="lp-mp-badge">🥑 Palta</div>
         </div>
         <div class="lp-mp-body">
